@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-i8s*ap49!(u2^w)rnxjtn=g464w8-_gckxiq1t$^4cs3!hnnaj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # เปิด DEBUG เพื่อดู error ชัดเจนขึ้น
+DEBUG = False  # ปิด DEBUG สำหรับ production
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'nongnarok20123.pythonanywhere.com', '*.pythonanywhere.com']
 
@@ -126,9 +126,10 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Security settings for production
-SECURE_SSL_REDIRECT = False  # Set to True if using HTTPS
+SECURE_SSL_REDIRECT = False  # PythonAnywhere ใช้ reverse proxy
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
 
 # CSRF settings
 CSRF_COOKIE_SECURE = False  # Set to True if using HTTPS
