@@ -355,8 +355,8 @@ body {
     position: relative;
     backdrop-filter: blur(10px);
     width: 100%;
-    max-width: 300px;
-    min-height: 300px;
+    max-width: 400px;
+    min-height: 380px;
 }
 
 .menu-card-mobile {
@@ -366,14 +366,14 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
     position: relative;
-    width: 140px;
-    min-width: 140px;
-    max-width: 140px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
     flex-shrink: 0;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
     height: auto;
-    min-height: 180px;
+    min-height: 200px;
 }
 
 .menu-card-mobile:hover {
@@ -407,8 +407,8 @@ body {
 
 .menu-img,
 .promo-img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #b97a56;
@@ -419,8 +419,8 @@ body {
 }
 
 .menu-img-mobile {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #b97a56;
@@ -503,10 +503,21 @@ body {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
+        padding: 0 10px;
+        margin: 0 -15px;
     }
     
     .menu-slider .d-flex {
         width: max-content;
+        padding-right: 20px;
+    }
+    
+    .menu-card-mobile {
+        margin-right: 10px;
+    }
+    
+    .menu-card-mobile:last-child {
+        margin-right: 0;
     }
 }
 
@@ -897,21 +908,21 @@ body {
     .menu-card,
     .promo-card {
         min-width: 160px;
-        max-width: 280px;
-        min-height: 280px;
+        max-width: 320px;
+        min-height: 350px;
     }
     
     .menu-card-mobile {
-        width: 140px;
-        min-width: 140px;
-        max-width: 140px;
+        width: 150px;
+        min-width: 150px;
+        max-width: 150px;
         padding: 10px;
-        min-height: 170px;
+        min-height: 190px;
     }
     
     .menu-img-mobile {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         border-width: 2px;
         margin-bottom: 8px;
     }
@@ -956,6 +967,36 @@ body {
         height: 3px;
     }
     
+    /* Desktop Menu Slider - แสดง 2 การ์ดต่อหน้าจอ */
+    .menu-slider-desktop {
+        position: relative;
+        padding: 0 1rem;
+    }
+
+    .menu-slider-desktop .d-flex {
+        scrollbar-width: thin;
+        scrollbar-color: #8B4513 #f1f1f1;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-slider-desktop .d-flex::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .menu-slider-desktop .d-flex::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .menu-slider-desktop .d-flex::-webkit-scrollbar-thumb {
+        background: #8B4513;
+        border-radius: 4px;
+    }
+
+    .menu-slider-desktop .d-flex::-webkit-scrollbar-thumb:hover {
+        background: #A0522D;
+    }
+    
     /* Mobile menu slider improvements */
     .menu-slider {
         padding-left: 0;
@@ -981,20 +1022,20 @@ body {
     .menu-card,
     .promo-card {
         min-width: 200px;
-        max-width: 300px;
-        min-height: 300px;
+        max-width: 380px;
+        min-height: 370px;
     }
     
     .menu-card-mobile {
-        width: 140px;
-        min-width: 140px;
-        max-width: 140px;
-        min-height: 180px;
+        width: 150px;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 200px;
     }
     
     .menu-img-mobile {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         margin-bottom: 8px;
     }
 }
