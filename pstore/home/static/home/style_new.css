@@ -1062,6 +1062,40 @@ body {
 }
 
 /* ========================================
+   LOGIN & REGISTER STYLES
+======================================== */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 184, 107, 0.2);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.login-container .form-control {
+    border: 2px solid #e9e0d1;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.login-container .form-control:focus {
+    border-color: #ffb86b;
+    box-shadow: 0 0 0 0.2rem rgba(255, 184, 107, 0.25);
+    background: #fff;
+}
+
+.login-container .btn {
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.login-container .alert {
+    border-radius: 15px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* ========================================
    ACCESSIBILITY IMPROVEMENTS
 ======================================== */
 @media (prefers-reduced-motion: reduce) {
