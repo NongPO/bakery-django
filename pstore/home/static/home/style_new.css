@@ -356,6 +356,26 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.menu-card-mobile {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-card-mobile:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
 .menu-card::before,
 .promo-card::before {
     content: '';
@@ -394,13 +414,15 @@ body {
 }
 
 .menu-img-mobile {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #b97a56;
     background: linear-gradient(45deg, #fffbe7, #fff5e6);
     transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
 }
 
 .menu-img:hover,
@@ -419,25 +441,27 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #ffb86b #ffe0e9;
     scroll-behavior: smooth;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .menu-slider::-webkit-scrollbar,
 .promo-slider::-webkit-scrollbar {
-    height: 8px;
+    height: 6px;
 }
 
 .menu-slider::-webkit-scrollbar-thumb,
 .promo-slider::-webkit-scrollbar-thumb {
     background: linear-gradient(90deg, #ffb86b, #ff7e7e);
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .menu-slider::-webkit-scrollbar-track,
 .promo-slider::-webkit-scrollbar-track {
     background: #ffe0e9;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 /* ========================================
@@ -799,9 +823,17 @@ body {
         max-width: 180px;
     }
     
+    .menu-card-mobile {
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
+        padding: 8px;
+    }
+    
     .menu-img-mobile {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
     }
     
     .category-item {
@@ -843,6 +875,17 @@ body {
         width: 60px;
         height: 3px;
     }
+    
+    /* Mobile menu slider improvements */
+    .menu-slider {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .menu-slider .d-flex {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 /* Small Devices (landscape phones, 576px and up) */
@@ -859,6 +902,17 @@ body {
     .promo-card {
         min-width: 200px;
         max-width: 220px;
+    }
+    
+    .menu-card-mobile {
+        width: 140px;
+        min-width: 140px;
+        max-width: 140px;
+    }
+    
+    .menu-img-mobile {
+        width: 70px;
+        height: 70px;
     }
 }
 
