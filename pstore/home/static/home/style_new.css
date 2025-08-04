@@ -363,12 +363,14 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
     position: relative;
-    width: 140px;
-    min-width: 140px;
-    max-width: 140px;
+    width: 130px;
+    min-width: 130px;
+    max-width: 130px;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
+    height: auto;
+    min-height: 160px;
 }
 
 .menu-card-mobile:hover {
@@ -431,6 +433,27 @@ body {
     transform: rotate(5deg) scale(1.1);
     border-color: #ff7e7e;
     box-shadow: 0 8px 25px rgba(255, 126, 126, 0.3);
+}
+
+/* Mobile card text styling */
+.menu-card-mobile .card-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #5a3826;
+    margin: 8px 0 4px 0;
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.menu-card-mobile .text-success {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin: 0;
 }
 
 /* ========================================
@@ -824,16 +847,18 @@ body {
     }
     
     .menu-card-mobile {
-        width: 120px;
-        min-width: 120px;
-        max-width: 120px;
-        padding: 8px;
+        width: 130px;
+        min-width: 130px;
+        max-width: 130px;
+        padding: 10px;
+        min-height: 150px;
     }
     
     .menu-img-mobile {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         border-width: 2px;
+        margin-bottom: 8px;
     }
     
     .category-item {
@@ -905,14 +930,16 @@ body {
     }
     
     .menu-card-mobile {
-        width: 140px;
-        min-width: 140px;
-        max-width: 140px;
+        width: 130px;
+        min-width: 130px;
+        max-width: 130px;
+        min-height: 160px;
     }
     
     .menu-img-mobile {
         width: 70px;
         height: 70px;
+        margin-bottom: 8px;
     }
 }
 
