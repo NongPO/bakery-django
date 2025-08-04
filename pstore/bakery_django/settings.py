@@ -141,5 +141,5 @@ SESSION_COOKIE_SECURE = False  # Set to True if using HTTPS
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# WhiteNoise configuration for static files
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# WhiteNoise configuration for static files  
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
